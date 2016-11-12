@@ -1,0 +1,42 @@
+@import 'base';
+@import '~normalize.css/normalize';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.google-map-component {
+	width: 600px;
+	height: 400px;
+}
+
+.stop-marker {
+	margin: 0 auto;
+	background: green;
+	border-radius: 50%;
+	overflow: hidden;
+	height: 10px;
+	width: 10px;
+}
+
+.stop-marker:hover {
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	transition: all 2s ease;
+}
